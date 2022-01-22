@@ -3,7 +3,6 @@ function About() {
         <>
             <figure>
             <img className="header1" src={ process.env.PUBLIC_URL + "/Assets/images/download.jpg" } />
-                {/* <img src="/Assets/images/download.jpg" alt="header" class="header1" /> */}
                 <figcaption id="figcaption">
                     <p>Looking for a web developer? You've come to the right spot. </p>
                 </figcaption>

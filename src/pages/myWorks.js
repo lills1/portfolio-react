@@ -1,8 +1,8 @@
 function MyWorks() {
     return (
         <>
-    
-             <h2 class="my-work-heading" id="Work"> My works</h2>
+
+            <h2 class="my-work-heading" id="Work"> My works</h2>
             <div class="centered-text">
                 <h3 style={{ fontWeight: '400', color: '#722620', fontStyle: 'italic' }}>collaborative projects</h3>
                 <h4 style={{ fontWeight: '400' }}> The travel-planner</h4>
@@ -20,13 +20,13 @@ function MyWorks() {
             </ul>
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-8 col-lg-6 mb-3">
-                <a href="https://n1cholassmith.github.io/country-travel-advisor/" target="blank">
-                        <img src="/Assets/images/faulty.png.png" id="work-img" alt="Here is my first work" />
+                    <a href="https://n1cholassmith.github.io/country-travel-advisor/" target="blank">
+                        <img className="work-img" src={process.env.PUBLIC_URL + "/Assets/images/faulty.png.png"} />
                     </a>
                 </div>
                 <div class="col-12 col-sm-8 col-lg-6 mb-3">
                     <a href="https://n1cholassmith.github.io/country-travel-advisor/" target="blank">
-                        <img src="/Assets/images/country.png" id="work-img" alt="Here is my first work" />
+                        <img className="work-img" src={process.env.PUBLIC_URL + "/Assets/images/country.png"} />
                     </a>
                 </div>
             </div>
@@ -45,14 +45,14 @@ function MyWorks() {
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-8 col-lg-6 mb-3">
                     <a href="https://n1cholassmith.github.io/country-travel-advisor/" target="blank">
-                        <img src="/Assets/images/mighty-reef-26126.herokuapp.com_login.png" id="work-img"
-                            alt="Here is my second work" />
+                        <img className="work-img" src={process.env.PUBLIC_URL + "/Assets/images/mighty-reef-26126.herokuapp.com_login.png"} />
+
                     </a>
                 </div>
                 <div class="col-12 col-sm-8 col-lg-6 mb-3">
                     <a href="https://mighty-reef-26126.herokuapp.com/" target="blank">
-                        <img src="/Assets/images/mighty-reef-26126.herokuapp.com_profile.png" id="work-img"
-                            alt="Here is my first work" />
+                        \<img className="work-img" src={process.env.PUBLIC_URL + "/Assets/images/mighty-reef-26126.herokuapp.com_profile.png"} />
+
                     </a>
                 </div>
             </div>
@@ -76,7 +76,8 @@ function MyWorks() {
                         </ul>
                     </div>
                     <a href="https://lills1.github.io/day-planner/" target="blank">
-                        <img class="scaling-img" src="/Assets/images/day_planner.png" id="my-photo" alt="photo-of-me" />
+                        <img className="work-img" src={process.env.PUBLIC_URL + "/Assets/images/day_planner.png"} />
+
                     </a>
                 </div>
                 <div class="col-12 col-sm-8 col-lg-6 mb-3">
@@ -93,7 +94,7 @@ function MyWorks() {
                         </ul>
                     </div>0
                     <a href="https://lills1.github.io/weather-dashboard/" target="blank">
-                        <img class="scaling-img" src="/Assets/images/ipad.png" id="my-photo" alt="photo-of-me" />
+                        <img className="work-img" src={process.env.PUBLIC_URL + "/Assets/images/ipad.png"} />
                     </a>
                 </div>
                 <div class="row justify-content-center">
@@ -110,11 +111,11 @@ function MyWorks() {
                             </ul>
                         </div>
                         <a href="https://github.com/lills1/Team-profile-generator" target="blank">
-                            <img class="scaling-img" src="/Assets/images/Capture.PNG" id="my-photo" alt="photo-of-me" />
+                            <img className="work-img" src={process.env.PUBLIC_URL + "/Assets/images/Capture.PNG"} />
                         </a>
                     </div>
                 </div>
-            </div> 
+            </div>
         </>
     )
 }
