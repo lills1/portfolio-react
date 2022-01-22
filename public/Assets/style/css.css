@@ -1,0 +1,296 @@
+
+  /* :root {
+        --secondary:#1f8ac0;
+        --main:#104c91;
+        --idk:#ffc09f;
+        --try: black;
+        } 
+    */
+
+/* defines colour scheme*/
+:root {
+    --secondary:#722620;
+    --main:#f2bc94;
+    --idk:#ffc09f;
+    --try: black;
+    }
+    
+    html,body {
+      margin:0;
+      padding:0;
+      overflow-x:hidden; 
+        height: 100%;
+    }
+  
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+    background-color: whitesmoke;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    /* describes header */
+
+header {
+    width: 100%;
+    background: linear-gradient(90deg, #722620, #f2bc94);
+    display:flex;
+    height:70px;
+    justify-content: space-between;
+    color:var(--main);
+    display:flex;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  /* aligns h1 to left */
+  
+  h1 {
+    text-align: left;
+    margin-left: 1rem;
+    margin-top:0.5rem;
+    font-weight:100;
+  }
+ 
+  /* aligns links to right, flexbox and colour */
+  
+  .nav-bar {
+    text-align: right;
+    color: var(--secondary);
+    font-weight: 100;
+    display:flex;
+    margin-top:0.9rem;  
+}
+
+  /* defins links font size, puts it to left*/
+  .nav-bar li {
+    display: inline;
+    font-size: 1.7rem;
+    margin-left: 80px;
+  }
+  /*hover effect over links */
+
+  .nav-bar li a:hover {
+    color:(var(--main)); 
+    text-decoration:underline; 
+    cursor:pointer;
+}
+
+/* changes colour of links removes underline */
+.nav-bar li a {
+  color: var(--secondary);
+  text-decoration:none;
+    }
+
+  /* creates hover effect */
+
+ .nav-bar li a:hover {
+        text-shadow: 2px 2px 10px white;
+      
+        filter: dropshadow(color=white, offx=2, offy=2);
+      }
+
+
+  
+  /*.spacing{
+      margin-top: 5rem;
+  }
+  */
+
+  .header1{
+    width:100%;
+    height: 200px;
+    opacity:0.5;
+    background-color: var(--main); 
+}
+
+h2{
+  font-weight: 100;
+  font-style: italic;
+  color:var(--secondary);
+}
+.content-inline{
+  display:flex;
+}
+
+#figcaption{
+    position: relative;
+    transform:translateY(-7.5rem);
+    text-align: center;
+    color: var(--secondary);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: x-large;
+  }
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;} 
+  /* Remove this if you don't want the 3D effect
+
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgba(114,38,32,0.5);
+  color: black;
+  padding:70px 0;
+}
+.weatherCards{
+  height: 100px;
+}
+.inside{
+  list-style-position: inside;
+}
+.weatherCards div{
+  background-color:rgba(128, 128, 128, .5);
+  border-radius:15px;
+  display:flex;
+  color:black;
+}
+/* Style the back side */
+.flip-card-back {
+  background: gray;
+  color: white;
+  transform: rotateY(180deg);
+}
+.color{
+  background-color:rgba(114,38,32,0.4)
+}
+.about-me-heading{
+  text-align: center;
+  border-style:solid;
+  border-top:1px;
+  border-left:1px;
+  font-style: italic;
+  margin-top: -20px;
+  font-weight: 200;
+  color:var(--secondary);
+  padding-bottom:10px;
+}
+
+.my-work-heading{
+  text-align: center;
+  border-style:solid;
+  border-top:1px;
+  border-left:1px;
+  font-style: italic;
+  font-weight: 200;
+  margin-top:15px;
+  color:var(--secondary);
+  padding-bottom:10px;
+}
+
+.contact-me-heading{
+  text-align: center;
+  border-style:solid;
+  border-top:1px;
+  border-left:1px;
+  font-style: italic;
+  font-weight: 200;
+  margin-top:15px;
+  color:var(--secondary);
+  padding-bottom:10px;
+}
+
+#work-img{
+  width: 100%;
+  height: auto;
+}
+.scaling-img{
+  width: 100%;
+  height: auto;
+}
+
+#img-of-me{
+  width: 100%;
+  height: auto;
+}
+
+.centered-text{
+  align-items:center;
+  text-align:center;
+  list-style-position: inside;
+}
+
+.fa::before{
+  color: rgba(114,38,32,0.5);
+  display:inline-block;
+  padding-left:80px;
+  padding-right:80px;
+  padding-top:30px;
+  font-size:3rem;
+}
+footer{
+  padding:10px;
+  text-align:center;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#400{
+font-weight:400
+}
+
+
+@media screen and (max-width: 850px) {
+  header {
+    height:7rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    .nav-bar li {
+      flex-direction:row;
+    }
+  }
+
+@media screen and (max-width: 650px) {
+ .nav-bar {
+   flex-direction:column;
+   justify-content: center;
+  }
+}}
+@media screen and (max-width: 650px) {
+  header{
+    height:10rem;
+   }
+ }
+
+ @media screen and (max-width: 550px) {
+  header {
+    height:11.5rem;
+  }}
+
+  @media screen and (max-width: 500px) {
+    header{
+      display:block;
+    }}
+
