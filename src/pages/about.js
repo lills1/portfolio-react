@@ -2,11 +2,12 @@ function About() {
     return (
         <>
             <figure>
-            <img className="header1" src={ process.env.PUBLIC_URL + "/Assets/images/download.jpg" } />
+                <img className="header1" src={process.env.PUBLIC_URL + "/Assets/images/download.jpg"} />
                 <figcaption id="figcaption">
                     <p>Looking for a web developer? You've come to the right spot. </p>
                 </figcaption>
             </figure>
+
 
             <main>
                 <div class="container">
